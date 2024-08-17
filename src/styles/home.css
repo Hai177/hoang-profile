@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+
+.background {
+    position: absolute;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(5px) brightness(50%);
+}
+
+.container-fluid {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.head-title {
+    position: absolute;
+    font-weight: 700;
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head-title span {
+    background: linear-gradient(to right, #166402 0%, yellowgreen 70%);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce 0.8s ease infinite alternate;
+}
+
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow:
+            0 1px #ff0b0b,
+            0 2px #ccc,
+            0 3px #ccc,
+            0 4px #ccc,
+            0 5px #ccc,
+            0 6px #ccc,
+            0 7px #ccc,
+            0 8px #ccc,
+            0 9px #ccc,
+            0 50px 25px #000000(0, 0, 0, 0.2);
+    }
+}
+.head-title span:nth-child(2) {
+    animation-delay: 0.05s;
+}
+.head-title span:nth-child(3) {
+    animation-delay: 0.1s;
+}
+.head-title span:nth-child(4) {
+    animation-delay: 0.15s;
+}
+.head-title span:nth-child(5) {
+    animation-delay: 0.2s;
+}
+.head-title span:nth-child(6) {
+    animation-delay: 0.25s;
+}
+.head-title span:nth-child(7) {
+    animation-delay: 0.3s;
+}
+.head-title span:nth-child(8) {
+    animation-delay: 0.35s;
+}
+.head-title span:nth-child(9) {
+    animation-delay: 0.4s;
+}
+.head-title span:nth-child(10) {
+    animation-delay: 0.45s;
+}
+.head-title span:nth-child(11) {
+    animation-delay: 0.5s;
+}
+.head-title span:nth-child(12) {
+    animation-delay: 0.55s;
+}
+.head-title span:nth-child(13) {
+    animation-delay: 0.6s;
+}
+.head-title span:nth-child(14) {
+    animation-delay: 0.65s;
+}
+.head-title span:nth-child(15) {
+    animation-delay: 0.7s;
+}
+.head-title span:nth-child(16) {
+    animation-delay: 0.75s;
+}
+.head-title span:nth-child(17) {
+    animation-delay: 0.8s;
+}
+.head-title span:nth-child(18) {
+    animation-delay: 0.85s;
+}
+.head-title span:nth-child(19) {
+    animation-delay: 0.9s;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.img {
+    object-fit: none;
+    filter: brightness(50%);
+    object-position: 50% 55%;
+}
+
+/* Style for the card container */
+.card-container {
+    transition: transform 0.3s ease;
+}
+
+/* Style for individual cards */
+.card {
+    width: 300px;
+    height: 50vh; /* Set the card height as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    opacity: 0.5;
+    transform: translateX(0); /* Initialize transform */
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease; /* Add transitions for opacity and transform */
+}
+
+/* Style for the center card */
+.card.center {
+    opacity: 1;
+    transform: translateX(0);
+    &:hover {
+        transform: translateX(0) translateY(-5vh) rotateY(0) scale(1.1);
+    } /* Keep the center card centered */
+}
+
+/* Style for the left card */
+.card.left {
+    transform: translateX(-3%); /* Move left card to the left */
+}
+
+/* Style for the right card */
+.card.right {
+    transform: translateX(3%); /* Move right card to the right */
+}
+
+/* Style for navigation buttons */
+.btn {
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.content {
+    position: absolute;
+}
+
+.title {
+    color: white;
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2em;
+    border-bottom: 2px solid white;
+}
+
+.title:hover {
+    color: yellowgreen;
+    border-bottom: 2px solid yellowgreen;
+}
+
+.description {
+    color: white;
+    display: flex;
+}
+
+/*--------profile--------- */
+
+.profile-body {
+    background: linear-gradient(135deg, rgba(15, 116, 75, 1) 0%, rgba(39, 23, 62, 1) 100%);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.main-content {
+    width: 100%;
+    margin-left: 50px;
+    padding: 10px;
+}
+.avatar-img {
+    height: 25vh;
+    object-fit: cover;
+    object-position: 0% 20%;
+    border: 3px solid #01b456;
+    filter: brightness(90%);
+}
+
+.information {
+    font-size: 14px;
+    border-right: 3px solid #02ad54;
+}
+
+.profile {
+    border-top: 1px solid #02ad54;
+    border-bottom: 1px solid #02ad54;
+}
+
+.profile-content {
+    color: #02ad54;
+}
+
+.profile-content a {
+    color: #02ad54;
+}
+
+.skill-common h6 {
+    color: #02ad54;
+}
+
+.skill-detail-items,
+.interests-detail-items {
+    color: #02ad54;
+}
+
+.certificate-detail {
+    color: #02ad54;
+}
+
+.description .name {
+    height: 20vh;
+    border-bottom: 1px solid #02ad54;
+}
+
+.description .education {
+    border-bottom: 1px solid #02ad54;
+}
+
+.description .education p {
+    color: rgb(214, 214, 214);
+}
+
+.icon-school,
+.icon-major,
+.icon-time,
+.icon-status {
+    color: #05d368;
+}
+
+.description .work p {
+    color: rgb(214, 214, 214);
+}
+
+.icon-company,
+.icon-position,
+.icon-time-work,
+.icon-outline {
+    color: #05d368;
+}
+
+.description .work {
+    border-bottom: 1px solid #02ad54;
+}
+
+.project-items table tr th {
+    color: #05d368;
+    border-right: 1px solid #4dd790;
+    border-bottom: 1px solid #4dd790;
+}
+
+.project-items table tr td {
+    color: rgb(214, 214, 214);
+    border-bottom: 1px solid #4dd790;
+}
+
+.project-items table {
+    border: 1px solid #02ad54;
+}
+
+/* ---------Coding------------- */
+.requirement-menu-items {
+    background-color: #d3ffe8;
+    color: #016531;
+}
+
+.requirement-menu-items:hover {
+    transform: translateY(-0.25em);
+    background-color: #034824;
+    color: white;
+    transition: 1s ease all;
+    box-shadow: #428162 1.95px 1.95px 2.6px;
+}
+
+.requirement-menu .focus {
+    transform: translateY(-0.25em);
+    background-color: #034824;
+    color: white;
+    transition: 1s ease all;
+    box-shadow: #428162 1.95px 1.95px 2.6px;
+}
+
+.output-form {
+    height: 90vh;
+    overflow-x: scroll;
+    font-size: 13px !important;
+    width: 500px;
+}
+
+.clear {
+    background: rgb(214, 0, 0);
+    background: linear-gradient(77deg, rgba(214, 0, 0, 1) 0%, rgba(154, 15, 76, 1) 100%);
+}
+
+.gen {
+    background: rgb(6, 122, 49);
+    background: linear-gradient(128deg, rgba(6, 122, 49, 1) 0%, rgba(59, 201, 5, 1) 100%);
+}
+
+#option {
+    position: absolute;
+    overflow: auto;
+}
+textarea {
+    height: 500px;
+}
+.header {
+    background-color: white;
+}
+.form-row {
+    background-color: white;
+    padding-right: 20px;
+    position: relative;
+}
+.validation {
+    position: relative;
+}
+.validation-option {
+    position: absolute;
+    top: 28;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: white;
+}
+.table {
+    border-radius: 5px;
+
+    position: relative;
+}
+.del-btn {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 12px;
+    right: 4px;
+    color: white;
+    background: linear-gradient(77deg, rgba(214, 0, 0, 1) 0%, rgba(154, 15, 76, 1) 100%);
+}
+.clear-icon {
+    display: none;
+    position: absolute;
+    font-size: smaller;
+    border-radius: 50%;
+    background-color: inherit;
+    border: none;
+    top: 72px;
+    right: 12px;
+}
+.show {
+    display: block;
+}
+
+.upload-container {
+    margin-top: 20px;
+    background-color: #ccc;
+    width: 40%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    border-radius: 10px;
+    border: 6px double gray;
+}
+.generate-result {
+    display: flex;
+    height: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.output {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    max-height: auto;
+    outline: none;
+    padding: 12px;
+}
+.copy-btn {
+    width: 80px;
+    height: 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    border: none;
+    background-color: #424242;
+    color: white;
+    opacity: 0.5;
+    transition: 0.2s;
+    padding: auto;
+}
+.copy-btn:hover {
+    opacity: 1;
+}
+.icon {
+    scale: 0.6;
+}
+.copy-btn-scale {
+    scale: 0.9;
+}

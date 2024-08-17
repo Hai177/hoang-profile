@@ -1,0 +1,36 @@
+.nvarbar {
+    height: 100vh;
+    width: 50px;
+    position: fixed;
+    background-color: #213e42;
+}
+
+.icon-home-text,
+.icon-profile-text,
+.icon-tool-text {
+    color: white;
+}
+
+.icon-home:hover {
+    background-color: #116f4b;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.icon-profile:hover {
+    background-color: #116f4b;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.icon-tool:hover {
+    background-color: #116f4b;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.actives {
+    background-color: #116f4b;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
